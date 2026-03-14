@@ -1,120 +1,111 @@
-Customer Spend Prediction using Machine Learning
-Overview
+# Customer Spend Prediction using Machine Learning
 
-This project predicts how much a customer will spend in the next month using historical transaction data, demographics, and engagement features. The model uses machine learning regression techniques to forecast future spending behavior, which can help businesses improve marketing strategies, customer targeting, and revenue planning.
+## Overview
+This project predicts **how much a customer will spend in the next month** using historical transaction data, demographics, and engagement features.
 
-Problem Statement
+The model uses **machine learning regression techniques** to forecast future spending behavior, which can help businesses improve marketing strategies, customer targeting, and revenue planning.
 
-Businesses often struggle to estimate future customer spending accurately. Without predictive insights, companies cannot effectively plan marketing campaigns, optimize inventory, or personalize offers.
+---
 
-This project builds a regression-based machine learning model that predicts the next month's customer spending based on past behavior and customer attributes.
+## Problem Statement
+Businesses often struggle to estimate **future customer spending accurately**. Without predictive insights, companies cannot effectively:
 
-Objectives
+- Plan marketing campaigns
+- Optimize inventory
+- Personalize offers
 
-Predict customer spending for the upcoming month
+This project builds a **regression-based machine learning model** that predicts the **next month's customer spending** based on past behavior and customer attributes.
 
-Analyze factors influencing customer purchasing behavior
+---
 
-Build a regression model with high prediction accuracy
+## Objectives
+- Predict customer spending for the upcoming month
+- Analyze factors influencing customer purchasing behavior
+- Build a regression model with good prediction accuracy
+- Provide actionable insights for business decision-making
 
-Provide actionable insights for business decision-making
+---
 
-Dataset
+## Dataset
 
 The dataset contains historical customer transaction and profile data.
 
-Example Features
-Feature	Description
-Customer_ID	Unique identifier for each customer
-Age	Customer age
-Gender	Male/Female
-Annual_Income	Customer yearly income
-Past_Month_Spend	Amount spent in the previous month
-Transactions_Count	Number of transactions
-Website_Visits	Number of website visits
-Last_Purchase_Days	Days since last purchase
-Engagement_Score	Customer engagement metric
-Next_Month_Spend	Target variable (prediction output)
+### Example Features
 
-Dataset sources can include:
+| Feature | Description |
+|------|------|
+| Customer_ID | Unique identifier for each customer |
+| Age | Customer age |
+| Gender | Male / Female |
+| Annual_Income | Customer yearly income |
+| Past_Month_Spend | Amount spent in the previous month |
+| Transactions_Count | Number of transactions |
+| Website_Visits | Number of website visits |
+| Last_Purchase_Days | Days since last purchase |
+| Engagement_Score | Customer engagement metric |
+| Next_Month_Spend | Target variable |
 
-Kaggle
+Dataset sources:
+- Kaggle
+- Open financial transaction datasets
+- Synthetic customer data
 
-Open financial transaction datasets
+---
 
-Synthetic customer data
+## Tech Stack
 
-Tech Stack
+**Programming Language**
+- Python
 
-Programming Language: Python
+**Libraries**
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib
+- Seaborn
 
-Libraries:
+**Environment**
+- Jupyter Notebook / Google Colab
 
-pandas
+---
 
-numpy
+## Project Workflow
 
-scikit-learn
+### 1️⃣ Data Collection
+Collect customer transaction datasets containing spending behavior and demographic details.
 
-matplotlib
+### 2️⃣ Data Preprocessing
+- Handle missing values
+- Encode categorical variables
+- Normalize numerical features
+- Remove outliers
 
-seaborn
+### 3️⃣ Exploratory Data Analysis (EDA)
+- Identify spending patterns
+- Analyze feature correlations
+- Visualize customer behavior
 
-Environment: Jupyter Notebook / Google Colab
-
-Project Workflow
-1. Data Collection
-
-Download customer transaction datasets containing spending behavior and demographic details.
-
-2. Data Preprocessing
-
-Handle missing values
-
-Encode categorical variables
-
-Normalize numerical features
-
-Remove outliers
-
-3. Exploratory Data Analysis (EDA)
-
-Identify spending patterns
-
-Analyze feature correlations
-
-Visualize customer behavior
-
-4. Feature Engineering
-
+### 4️⃣ Feature Engineering
 Create useful features such as:
+- Average spending
+- Transaction frequency
+- Engagement indicators
 
-Average spending
-
-Transaction frequency
-
-Engagement indicators
-
-5. Model Training
-
+### 5️⃣ Model Training
 Regression models used:
 
-Linear Regression
+- Linear Regression
+- Random Forest Regressor
+- Gradient Boosting Regressor
 
-Random Forest Regressor
+### 6️⃣ Model Evaluation
+Evaluation metrics used:
 
-Gradient Boosting Regressor
+- Mean Absolute Error (MAE)
+- Mean Squared Error (MSE)
+- R² Score
 
-6. Model Evaluation
+### 7️⃣ Prediction
+The trained model predicts **customer spending for the next month**.
 
-Evaluation metrics:
-
-Mean Absolute Error (MAE)
-
-Mean Squared Error (MSE)
-
-R² Score
-
-7. Prediction
-
-The trained model predicts customer spending for the next month.
+---
