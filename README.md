@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ML Regression Hackathon Project
 
 This project provides an end-to-end machine learning regression system for predictive analytics.
@@ -108,3 +109,116 @@ After training, outputs are saved under `artifacts/`:
 
 - Optional XGBoost support is enabled automatically if `xgboost` is installed.
 - You can replace the sample data with your own CSV/Excel and pass `--data-path` and `--target`.
+=======
+# Customer Spend Prediction using Machine Learning
+
+## Overview
+This project predicts **how much a customer will spend in the next month** using historical transaction data, demographics, and engagement features.
+
+The model uses **machine learning regression techniques** to forecast future spending behavior, which can help businesses improve marketing strategies, customer targeting, and revenue planning.
+
+---
+
+## Problem Statement
+Businesses often struggle to estimate **future customer spending accurately**. Without predictive insights, companies cannot effectively:
+
+- Plan marketing campaigns
+- Optimize inventory
+- Personalize offers
+
+This project builds a **regression-based machine learning model** that predicts the **next month's customer spending** based on past behavior and customer attributes.
+
+---
+
+## Objectives
+- Predict customer spending for the upcoming month
+- Analyze factors influencing customer purchasing behavior
+- Build a regression model with good prediction accuracy
+- Provide actionable insights for business decision-making
+
+---
+
+## Dataset
+
+The dataset contains historical customer transaction and profile data.
+
+### Example Features
+
+| Feature | Description |
+|------|------|
+| Customer_ID | Unique identifier for each customer |
+| Age | Customer age |
+| Gender | Male / Female |
+| Annual_Income | Customer yearly income |
+| Past_Month_Spend | Amount spent in the previous month |
+| Transactions_Count | Number of transactions |
+| Website_Visits | Number of website visits |
+| Last_Purchase_Days | Days since last purchase |
+| Engagement_Score | Customer engagement metric |
+| Next_Month_Spend | Target variable |
+
+Dataset sources:
+- Kaggle
+- Open financial transaction datasets
+- Synthetic customer data
+
+---
+
+## Tech Stack
+
+**Programming Language**
+- Python
+
+**Libraries**
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib
+- Seaborn
+
+**Environment**
+- Jupyter Notebook / Google Colab
+
+---
+
+## Project Workflow
+
+### 1️⃣ Data Collection
+Collect customer transaction datasets containing spending behavior and demographic details.
+
+### 2️⃣ Data Preprocessing
+- Handle missing values
+- Encode categorical variables
+- Normalize numerical features
+- Remove outliers
+
+### 3️⃣ Exploratory Data Analysis (EDA)
+- Identify spending patterns
+- Analyze feature correlations
+- Visualize customer behavior
+
+### 4️⃣ Feature Engineering
+Create useful features such as:
+- Average spending
+- Transaction frequency
+- Engagement indicators
+
+### 5️⃣ Model Training
+Regression models used:
+
+- Linear Regression
+- Random Forest Regressor
+- Gradient Boosting Regressor
+
+### 6️⃣ Model Evaluation
+Evaluation metrics used:
+
+- Mean Absolute Error (MAE)
+- Mean Squared Error (MSE)
+- R² Score
+
+### 7️⃣ Prediction
+The trained model predicts **customer spending for the next month**.
+
+---
+>>>>>>> 7aa8d2d31b7777e86253e9a705a395b63bd5265f
